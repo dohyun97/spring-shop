@@ -40,7 +40,11 @@
           <div>${reply.content }</div>
             <div class="d-flex">
                <div class="font-italic">Writer: ${reply.user.username}&nbsp;</div>
+               <c:choose>
+               <c:when test="${reply.user.username == principal.user.username }">
                <button onClick="index.replyDelete(${board.id},${reply.id})"class="badge">Delete</button>
+               </c:when>
+               </c:choose>
            </div>
         </li>
         </c:forEach>

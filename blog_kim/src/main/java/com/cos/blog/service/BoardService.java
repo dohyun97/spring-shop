@@ -71,6 +71,6 @@ public class BoardService {
 	
 	@Transactional
 	public void deleteReply(int replyId) {
-		replyRepository.deleteById(replyId);
+		replyRepository.deleteById(replyId); 
 	}
 }
