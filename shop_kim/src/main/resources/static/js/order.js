@@ -20,7 +20,7 @@ let index = {
 			dataType:"json"
 		}).done(resp => {
 			if(resp.status === 500){
-				alert("Please type all")
+				alert(`${resq.data}`)
 			}else{
 			alert("Thank you for order!");
 			//console.log(resp);  
